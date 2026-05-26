@@ -2,309 +2,326 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oscar Pullay - Mobile & Backend Developer. Portfolio, skills and experience.">
-    <meta property="og:title" content="Oscar Pullay - Software Engineer">
-    <meta property="og:description" content="Mobile & Backend Developer. Explore my portfolio and work experience.">
-    <meta property="og:type" content="website">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Oscar Pullay | Mobile & Backend Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oscar Pullay - Mobile & Backend Developer. Portfolio, skills, and experience.">
+  <meta property="og:title" content="Oscar Pullay - Software Engineer">
+  <meta property="og:description" content="Mobile & Backend Developer. Explore my portfolio and work experience.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&family=Reddit+Sans+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Oscar Pullay | Mobile & Backend Developer</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-brand">oscarepv<span>.dev</span></a>
-            <div class="nav-links">
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#resume">Experience</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <a href="#resume" class="btn-outline" style="padding: 0.4rem 1rem;">CV</a>
-            </div>
-        </div>
-    </nav>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#" class="nav-brand" aria-label="Home">oscarepv<span>.dev</span></a>
+      <div class="nav-links">
+        <a class="nav-link active" href="#projects" aria-current="page">Work</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#resume">Experience</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
     <div class="container">
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <p class="hero-subtitle">Hi, I am</p>
-            <h1 class="hero-title">Oscar Pullay.</h1>
-            <h2 class="hero-role typewriter-text">Mobile & Backend Developer.</h2>
-            <p class="hero-desc">
-                I build robust Backend architectures and smooth Mobile experiences. 
-                I specialize in designing scalable systems and native/hybrid applications focused on user experience.
-            </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn-primary">View Projects</a>
-                <a href="https://api.whatsapp.com/send?phone=593984864415" target="_blank" class="btn-outline">Contact Me</a>
-            </div>
-        </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2 class="section-title"><span>01.</span> Featured Projects</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="./images/msapp.JPG" alt="Miseguri App">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Miseguri App</h3>
-                        <p class="project-problem">Security management and control.</p>
-                        <p class="project-desc">Mobile application designed for the control and administration of security personnel.</p>
-                        <div class="project-tech">
-                            <span>Ionic</span>
-                            <span>Angular</span>
-                            <span>Java/Backend</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/msapp.JPG" class="project-view"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="./images/g4.JPG" alt="Giving App">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Giving App</h3>
-                        <p class="project-problem">Donation platform.</p>
-                        <p class="project-desc">Coupon mobile app.</p>
-                        <div class="project-tech">
-                            <span>Ionic</span>
-                            <span>Angular</span>
-                            <span>PHP/Backend</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/g4.JPG" class="project-view"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="./images/pan.JPG" alt="Pancomido App">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Pancomido App</h3>
-                        <p class="project-problem">Food delivery service.</p>
-                        <p class="project-desc">Food delivery mobile app.</p>
-                        <div class="project-tech">
-                            <span>Ionic</span>
-                            <span>Firebase</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/pan.JPG" class="project-view"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="./images/c1.jpg" alt="Medical Control">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Medical Control</h3>
-                        <p class="project-problem">Patient and appointment management.</p>
-                        <p class="project-desc">Desktop application for the comprehensive management of medical records, prescriptions, and medical consultation tracking.</p>
-                        <div class="project-tech">
-                            <span>Java Swing</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/c1.jpg" class="project-view"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="./images/cij.JPG" alt="Celugramaij">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Celugramaij</h3>
-                        <p class="project-problem">Administrative platform.</p>
-                        <p class="project-desc">Web application for attendance tracking..</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Django</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/cij.JPG" class="project-view"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2 class="section-title"><span>02.</span> Technologies & Tools</h2>
-            <div class="skills-grid">
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-mobile-alt"></i> Mobile & Frontend</h3>
-                    <ul class="skill-list">
-                        <li>Ionic Framework</li>
-                        <li>Angular</li>
-                        <li>React/Typescript</li>
-                        <li>HTML, CSS, JavaScript</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
-                    <ul class="skill-list">
-                        <li>Java (Java EE, Spring)</li>
-                        <li>Python (Django)</li>
-                       
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Databases</h3>
-                    <ul class="skill-list">
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>Firebase</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools</h3>
-                    <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>Git Flow</li>
-                        <li>Adobe XD</li>
-                        <li>Agile Methodologies</li>
-                         <li>Maven</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Resume Section -->
-        <section id="resume">
-            <h2 class="section-title"><span>03.</span> Experience & Education</h2>
-            
-            <h3 class="font-mono text-accent" style="margin-bottom: 2rem; font-size: 1.2rem;">Work Experience</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018 - 2021</div>
-                    <h4 class="timeline-role">Software Developer</h4>
-                    <div class="timeline-company">EV Consultores</div>
-                    <p class="timeline-desc">
-                        Development and maintenance of robust web applications using <strong>Java EE</strong> and relational databases.
-                        Creation of cross-platform hybrid mobile applications using <strong>Ionic Framework</strong> for corporate solutions.
-                    </p>
-                </div>
-            </div>
-
-            <h3 class="font-mono text-accent" style="margin-top: 3rem; margin-bottom: 2rem; font-size: 1.2rem;">Education</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Present</div>
-                    <h4 class="timeline-role">Master's Degree in Computer Security</h4>
-                    <div class="timeline-company">Universidad Tecnológica Israel - Quito, Ecuador</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2026</div>
-                    <h4 class="timeline-role">Information Systems Engineering</h4>
-                    <div class="timeline-company">Universidad Tecnológica Israel - Quito, Ecuador</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2014 - 2019</div>
-                    <h4 class="timeline-role">Technologist in Computer Systems Analysis</h4>
-                    <div class="timeline-company">Escuela Politécnica Nacional - Quito, Ecuador</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title"><span>04.</span> About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Hi, I'm Oscar. For me, the world of programming is a constant challenge that drives me to grow every day. 
-                        I've been a self-taught developer for most of my career, which has given me the ability to adapt quickly 
-                        to new technologies and solve complex problems.
-                    </p>
-                    <p>
-                        I'm passionate about building software architectures that not only work well but are highly scalable and maintainable.
-                        Outside of coding, I'm a big fan of sports, music, and video games.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="./images/img.jpg" alt="Oscar Pullay">
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="section-title" style="justify-content: center;"><span>05.</span> Contact</h2>
-            <div class="contact">
-                <h3 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-main);">Let's build something great</h3>
-                <p class="contact-text">
-                    I'm currently open to new opportunities. Whether you have a project in mind, 
-                    need a developer for your team, or just want to say hi, feel free to reach out!
-                </p>
-                <div style="margin-top: 2rem;">
-                    <a href="https://api.whatsapp.com/send?phone=593984864415" target="_blank" class="btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">Message me on WhatsApp</a>
-                </div>
-                
-                <div class="social-links">
-                    <a href="https://github.com/oscarepv" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/oscar-pullay-073917152/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Modal -->
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <img class="img-project img-fluid" src="" id="imagen-modal" alt="Project Screenshot">
-                    </div>
-                </div>
-            </div>
+      <!-- HERO -->
+      <section id="hero" class="hero" aria-label="Introduction">
+        <p class="hero-label reveal reveal-delay-1">Hi, I'm</p>
+        <h1 class="hero-name reveal reveal-delay-2">Oscar <span>Pullay.</span></h1>
+        <p class="hero-role typewriter reveal reveal-delay-3">Mobile &amp; Backend Developer</p>
+        <p class="hero-desc reveal reveal-delay-3">
+          I build robust Backend architectures and smooth Mobile experiences. I specialize in designing scalable systems and native/hybrid applications.
+        </p>
+        <div class="hero-actions reveal reveal-delay-4">
+          <a href="#projects" class="btn-primary">View my work</a>
+          <a href="https://api.whatsapp.com/send?phone=593984864415" target="_blank" class="btn-outline">Contact me</a>
         </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 class="section-title reveal" id="projects-title">
+          <span>Featured Projects</span>
+          Projects I've built
+        </h2>
+        <div class="projects-grid">
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-img-wrapper">
+              <img src="./images/msapp.JPG" alt="Miseguri App screenshot">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Miseguri App</h3>
+              <p class="project-desc">Security mobile app.</p>
+              <div class="project-tech">
+                <span>Ionic</span> <span>Angular</span> <span>Java</span>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/msapp.JPG" class="project-view project-link">
+                View project <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-img-wrapper">
+              <img src="./images/g4.JPG" alt="Giving App screenshot">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Giving App</h3>
+              <p class="project-desc">Coupon mobile app.</p>
+              <div class="project-tech">
+                <span>Ionic</span> <span>Angular</span> <span>PHP</span>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/g4.JPG" class="project-view project-link">
+                View project <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-3">
+            <div class="project-img-wrapper">
+              <img src="./images/pan.JPG" alt="Pancomido App screenshot">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Pancomido App</h3>
+              <p class="project-desc">Food delivery mobile app..</p>
+              <div class="project-tech">
+                <span>Ionic</span> <span>Firebase</span>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/pan.JPG" class="project-view project-link">
+                View project <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-img-wrapper">
+              <img src="./images/c1.jpg" alt="Medical Control screenshot">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Medical Control</h3>
+              <p class="project-desc">Desktop application for medical records, prescriptions, and consultation tracking.</p>
+              <div class="project-tech">
+                <span>Java Swing</span> <span>PostgreSQL</span>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/c1.jpg" class="project-view project-link">
+                View project <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-img-wrapper">
+              <img src="./images/cij.JPG" alt="Celugramaij screenshot">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Celugramaij</h3>
+              <p class="project-desc">Web platform for attendance tracking.</p>
+              <div class="project-tech">
+                <span>Python</span> <span>Django</span> <span>PostgreSQL</span>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#modal" data-img="./images/cij.JPG" class="project-view project-link">
+                View project <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 class="section-title reveal" id="skills-title">
+          <span>Technologies</span>
+          Tools & expertise
+        </h2>
+        <div class="skills-wrap">
+
+          <div class="skill-group reveal reveal-delay-1">
+            <h3><i class="fas fa-mobile-alt" aria-hidden="true"></i> Mobile & Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Ionic</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-2">
+            <h3><i class="fas fa-server" aria-hidden="true"></i> Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Java EE</span>
+              <span class="skill-tag">Spring</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-3">
+            <h3><i class="fas fa-database" aria-hidden="true"></i> Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Firebase</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-4">
+            <h3><i class="fas fa-tools" aria-hidden="true"></i> Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Git Flow</span>
+              <span class="skill-tag">Adobe XD</span>
+              <span class="skill-tag">Maven</span>
+              <span class="skill-tag">Agile</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="resume" aria-labelledby="resume-title">
+        <h2 class="section-title reveal" id="resume-title">
+          <span>Career</span>
+          Experience & education
+        </h2>
+
+        <h3 class="reveal" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); margin-bottom: 1.5rem; font-weight: 500;">Experience</h3>
+        <div class="timeline reveal reveal-delay-1">
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-date">2018 — 2021</p>
+            <h4 class="timeline-role">Software Developer</h4>
+            <p class="timeline-company">EV Consultores — Quito, Ecuador</p>
+            <p class="timeline-desc">
+              Built web applications with Java EE and relational databases. Developed cross-platform mobile apps using Ionic Framework.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="reveal" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); margin-bottom: 1.5rem; margin-top: 3rem; font-weight: 500;">Education</h3>
+        <div class="timeline">
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-date">Present</p>
+            <h4 class="timeline-role">Master's in Computer Security</h4>
+            <p class="timeline-company">Universidad Tecnológica Israel</p>
+          </div>
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-date">2026</p>
+            <h4 class="timeline-role">Information Systems Engineering</h4>
+            <p class="timeline-company">Universidad Tecnológica Israel</p>
+          </div>
+          <div class="timeline-item reveal reveal-delay-3">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-date">2014 — 2019</p>
+            <h4 class="timeline-role">Computer Systems Analysis</h4>
+            <p class="timeline-company">Escuela Politécnica Nacional</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" aria-labelledby="about-title">
+        <h2 class="section-title reveal" id="about-title">
+          <span>About</span>
+          Who I am
+        </h2>
+        <div class="about-grid">
+          <div class="about-text reveal reveal-delay-1">
+            <p>
+              Hi, I'm Oscar. For me, programming is a constant challenge that drives me to grow every day.
+              I've been a self-taught developer for most of my career, which gave me the ability to adapt quickly
+              to new technologies and solve complex problems.
+            </p>
+            <p>
+              I'm passionate about building software architectures that are scalable and maintainable.
+              Outside of coding, I enjoy sports, music, and video games.
+            </p>
+          </div>
+          <div class="about-image reveal reveal-delay-2">
+            <img src="./images/img.jpg" alt="Portrait of Oscar Pullay">
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" aria-labelledby="contact-title">
+        <div class="contact-section reveal">
+          <h2 class="contact-heading" id="contact-title">
+            Let's work together
+          </h2>
+          <p class="contact-text">
+            I'm open to new opportunities. Whether you have a project, need a developer,
+            or just want to say hi — feel free to reach out.
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=593984864415" target="_blank" class="btn-primary" style="padding: 0.75rem 2rem;">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            Message me
+          </a>
+          <div class="social-list">
+            <a href="https://github.com/oscarepv" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/oscar-pullay-073917152/" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODAL -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="modal-label">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span id="modal-label" class="visually-hidden">Project screenshot</span>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <img class="img-project img-fluid" src="" id="imagen-modal" alt="Project screenshot">
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
+  </main>
 
-    <footer>
-        <p>Designed & Built by Oscar Pullay</p>
-    </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+  <footer role="contentinfo">
+    <p>Designed & Built by Oscar Pullay</p>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

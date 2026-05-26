@@ -1,43 +1,89 @@
 $(document).ready(function() {
-    // Smooth scrolling for navigation links
-    $('a.nav-link, a.btn-primary, a.btn-outline').on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
+  // Smooth scrolling for nav links
+  $("a.nav-link, a.btn-primary, a.btn-outline").on("click", function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      var navHeight = $(".navbar").outerHeight();
+      $("html, body").animate({
+        scrollTop: $(hash).offset().top - navHeight
+      }, 800);
+    }
+  });
 
-            // Offset for the fixed navbar
-            var navHeight = $('.navbar').outerHeight();
+  // Navbar shrink on scroll
+  var navbar = $(".navbar");
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() > 80) {
+      navbar.addClass("navbar-scrolled");
+    } else {
+      navbar.removeClass("navbar-scrolled");
+    }
 
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - navHeight
-            }, 800, function(){
-                // Optional: Add hash to URL
-                // window.location.hash = hash;
-            });
+    // Active link highlighting
+    var scrollDistance = $(window).scrollTop() + $(".navbar").outerHeight() + 10;
+    $("section").each(function(i) {
+      if ($(this).position().top <= scrollDistance) {
+        $(".nav-links a.nav-link.active").removeClass("active");
+        $(".nav-links a.nav-link").eq(i - 1).addClass("active");
+      }
+    });
+  }).scroll();
+
+  // Reveal animations
+  var revealElements = $(".reveal");
+  if (revealElements.length > 0 && window.IntersectionObserver) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          $(entry.target).addClass("visible");
+          observer.unobserve(entry.target);
         }
-    });
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
 
-    // Active link highlighting based on scroll position
-    $(window).on('scroll', function() {
-        var scrollDistance = $(window).scrollTop() + $('.navbar').outerHeight() + 10;
+    revealElements.each(function() { observer.observe(this); });
+  } else {
+    revealElements.addClass("visible");
+  }
 
-        $('section').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
-                $('.nav-links a.nav-link.active').removeClass('active');
-                $('.nav-links a.nav-link').eq(i - 1).addClass('active'); // i-1 because hero has no nav link
-            }
-        });
-    }).scroll(); // Trigger on load
+  // Back to top
+  var backToTop = $("#backToTop");
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() > 400) {
+      backToTop.addClass("visible");
+    } else {
+      backToTop.removeClass("visible");
+    }
+  });
 
-    // Modal Image handling
-    $('.project-view').on('click', function(e){
-        e.preventDefault();
-        var ruta_imagen = $(this).data('img');
-        $('#imagen-modal').attr('src', ruta_imagen);
-    });
+  backToTop.on("click", function() {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+  });
 
-    // Close modal when clicking on it
-    $('#modal').on('click', function(){
-        $('#modal').modal('hide');
-    });
+  // Modal image
+  $(".project-view").on("click", function(e) {
+    e.preventDefault();
+    $("#imagen-modal").attr("src", $(this).data("img"));
+  });
+
+  // Close modal on backdrop click
+  $("#modal").on("click", function(e) {
+    if ($(e.target).hasClass("modal") || $(e.target).closest(".modal-content").length === 0) {
+      $("#modal").modal("hide");
+    }
+  });
+
+  // Return focus after modal closes
+  var lastFocused = null;
+  $(".project-view").on("click", function() { lastFocused = this; });
+  $("#modal").on("hidden.bs.modal", function() {
+    if (lastFocused) { $(lastFocused).focus(); }
+  });
+
+  // Reset active link on load
+  if ($(window).scrollTop() === 0) {
+    $(".nav-links a.nav-link.active").removeClass("active");
+    $(".nav-links a.nav-link").first().addClass("active");
+  }
 });
